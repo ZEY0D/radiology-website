@@ -1,0 +1,6 @@
+ECHO is on.
+obj/ 
+bin/ 
+*.user 
+*.suo 
+*.log 

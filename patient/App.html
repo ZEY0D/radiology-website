@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/patient/App.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="app-container">
+    <section>
+      <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul id="sidebarItems">
+          <!-- <li><span class="icon"><i class="fas fa-home"></i></span><a class="text" href="#home">Home</a></li> -->
+          <li><span class="icon"><i class="fas fa-user"></i></span><a class="text" href="#profile">Profile</a></li>
+          <li><span class="icon"><i class="fa-solid fa-calendar-days"></i></span><a class="text" href="#my-appointments">My Appointments</a></li>
+          <li><span class="icon"><i class="fa-solid fa-clipboard-list"></i></span><a class="text" href="#book-appointments">Book Appointments</a></li>
+          <li><span class="icon"><i class="fa-solid fa-x-ray"></i></span><a class="text" href="#my-scans">My Scans</a></li>
+          <!-- <li><span class="icon"><i class="fas fa-cog"></i></span><span class="text">Settings</span></li> -->
+          <li><span class="icon"><i class="fas fa-door-open"></i></span><span class="text">Logout</span></li>
+        </ul>
+      </div>
+      <script src="JS/sidebar.js"></script>
+    </section>
+    <div class="main-content">
+      <!-- start profile -->
+    <div class="profile" id="profile">
+        <div class="main-heading">
+            <h2>Profile</h2>
+        </div>
+      <div class="dashboard">
+        <div class="left-panel">
+          <section>
+            <div class="profile-card">
+              <div class="left">
+                <img src="60147908-4b39-49c8-9971-82b0ab3bfa09.jpg" alt="profile" class="avatar" />
+                <div>
+                  <h3 id="p_name"></h3>
+                  <p id="p_email"></p>
+                  <!-- <button>Edit Profile</button> -->
+                </div>
+              </div>
+              <div class="right">
+                <div><strong>Gender:</strong><span id="p_gender"></span></div>
+                <!-- <div><strong>Age:</strong> 22</div> -->
+                <div><strong>Blood:</strong><span id="p_bloodType"></span></div>
+                <!-- <div><strong>Status:</strong> Active</div> -->
+                <!-- <div><strong>Department:</strong> Radiology</div> -->
+                <div><strong>Birth Date:</strong><span id="p_bod"></span></div>
+                <!-- <div><strong>Appointment:</strong> Monday 20-5</div> -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div> 
+      <script scr="/patient/JS/patientProfile.js"></script>
+     </div>
+     <!-- end profile -->
+      <!-- start Home -->
+       <!-- <div class="home" id="home">
+        <div class="main-heading">
+            <h2>Home</h2>
+        </div>
+        <div class="dashboard">
+            <div class="profile-card">
+                <p>kkkkk</p>
+            </div>
+        </div>
+       </div> -->
+      <!-- end home -->
+       <!-- start my appointments -->
+       <div class="my-appointments" id="my-appointments">
+        <div class="main-heading">
+            <h2>My Appointments</h2>
+        </div>
+        <div class="dashboard">
+            <div class="profile-card">
+                <p>....</p>
+            </div>
+        </div>
+       </div>
+      <!-- end my appointments -->
+       <!-- start book appointments -->
+       <div class="book-appointments" id="book-appointments">
+        <div class="main-heading">
+            <h2>Book Appointments</h2>
+        </div>
+        <div class="dashboard">
+            <div class="profile-card">
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                    BOOK APPOINTMENT
+                </button>
+            </div>
+        </div>
+       </div>
+      <!-- end book appointments -->
+       <!-- start my scans -->
+       <div class="my-scans" id="my-scans">
+        <div class="main-heading">
+            <h2>My Scans</h2>
+        </div>
+        <div class="dashboard">
+            <div class="profile-card"> 
+                <button>
+                    <svg
+                    aria-hidden="true"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        stroke-width="2"
+                        stroke="#fffffff"
+                        d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H11M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                    ></path>
+                    <path
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        stroke="#fffffff"
+                        d="M17 15V18M17 21V18M17 18H14M17 18H20"
+                    ></path>
+                    </svg>
+                    ADD FILE
+                </button>
+  
+            </div>
+        </div>
+       </div>
+      <!-- end my scans -->
+      
+     <!-- start footer -->
+     <div class="footer">
+        <div class="container">
+            <!-- <img src="images/logo.png" alt="Logo"> -->
+            <p>We Are Social</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-home"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p class="copyright">&copy; 2025 <span>Radiant Imaging</span>All Right Reserved</p>
+        </div>
+     </div>
+    <!-- end footer -->
+
+     </div>
+  </div>
+ 
+</body>
+</html>
