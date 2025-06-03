@@ -1,7 +1,7 @@
 # 🏥 Radiology Hospital Information System (HIS) Web Application
 This is a full-stack web application simulating a Hospital Information System (HIS) tailored for the Radiology Department, developed as part of a semester project. The application enables patients, doctors, and administrators to interact with radiology services digitally—streamlining appointment management, profile access, scan uploads, and administrative oversight.
 
-🚀 Features
+## 🚀 Features
 👥 User Roles
 Patients: Can register, log in, manage profiles, book appointments, view scan results.
 
