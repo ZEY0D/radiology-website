@@ -9,7 +9,7 @@ Doctors: Can log in, view appointments, upload scan results, and manage patient 
 
 Admins: Have full oversight through a dedicated dashboard with access to statistics, contact forms, and administrative controls.
 
-📄 Core Functionalities
+## 📄 Core Functionalities
 ✅ User authentication and role-based access (login/signup)
 
 ✅ Profile management with image uploads
